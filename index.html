@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allison&family=Roboto&family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Instrument for style Tags</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="style_block">
+        <ul>
+          <li>
+            Background-Color
+            <div class="show">
+              <input id="color" type="color" value="#000" />
+            </div>
+          </li>
+          <li>
+            Background-Image
+            <div class="show">
+              <input id="image" type="text" placeholder="http://Background.img" />
+              <input id="setBg" type="button" value="setBg">
+            </div>
+          </li>
+          <li>
+            Border-Radius
+            <div class="show">
+              <input id="radius" type="range" min="0" max="100" step="1" value="0" />
+            </div>
+          </li>
+          <li>
+            FontSize
+            <div class="show">
+              <input id="fontSize" type="range" min="0" max="100" step="1" value="14" />
+            </div>
+          </li>
+          <li>
+            Fonts
+            <div class="show">
+              <select name="Monserat" value="Monserat" id="fontFamily">
+                <option value="Roboto">Roboto</option>
+                <option value="Monserat" selected>Monserat</option>
+                <option value="Urbanist">Urbanist</option>
+                <option value="Allison">Allison</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            Box-Shadow
+            <div class="show">
+              <div class="box-shadow">
+                <div class="top">
+                  <input type="range" name="" id="one" min="0" max="100" step="1" value="0" />
+                  <input type="range" name="" id="two" min="0" max="100" step="1" value="0" />
+                </div>
+                <div class="shadow">
+                  <input type="range" name="" id="three" min="0" max="100" step="1" value="0" />
+                  <input type="range" name="" id="four" min="0" max="100" step="1" value="0" />
+                </div>
+                <div class="color">
+                  <input type="color" name="" id="colorBox" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            Font-Weight
+            <div class="show">
+              <select id="fontWeight">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600">600</option>
+                <option value="700">700</option>
+                <option value="800">800</option>
+                <option value="900">900</option>
+                <option value="bold">bold</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            TextTransform
+            <div class="show">
+              <select id="textTransform">
+                <option value="none">none</option>
+                <option value="uppercase">uppercase</option>
+                <option value="lowercase">lowercase</option>
+                <option value="capitalize">capitalize</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            Letter-Spacing
+            <div class="show">
+                <input type="range" name="" id="letter" min="0" max="100" step="1" value="0">
+            </div> 
+          </li>
+          <li>
+            Color
+            <div class="show">
+                <input type="color" name="" id="colorElem"  value="#000">
+            </div> 
+          </li>
+          <li>
+            Background-Color Elem
+            <div class="show">
+                <input type="color" name="" id="bgColorElem"  value="#000">
+            </div> 
+          </li>
+          <li>
+            Border
+            <div class="show">
+                <select name="" id="border">
+                    <option value="none" selected>none</option>
+                    <option value="none" selected>solid</option>
+                    <option value="none" selected>dashed</option>
+                    <option value="none" selected>dotted</option>
+                </select>
+                
+            </div> 
+          </li>
+          <li>
+            Border-radius elem
+            <div class="show">
+                <input type="range" name="" id="raduisElem"  value="0">
+            </div> 
+          </li>
+          <li>
+            Padding
+            <div class="show">
+                <div class="paddings">
+                    <input type="range" min="0" max="100" step="1" value="0">
+                    <input type="range" min="0" max="100" step="1" value="0">
+                </div>
+            </div>
+          </li>
+          <li>
+            width && height
+            <div class="show">
+                <div class="widthAndHeight">
+                    <div class="one">
+                        <lab for="width"> width
+                            <input id="width" type="range" min="0" max="100" step="1" value="10">
+                        </label>
+                    </div>
+                    <div class="two">
+                        <label for="height"> height
+                            <input id="height" type="range" min="0" max="100" step="1" value="10">
+                        </label>
+                    </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="block_tag">
+          <button class="tag_btn">Button</button>
+      </div>
+
+      <code class="block_code"> </code>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
